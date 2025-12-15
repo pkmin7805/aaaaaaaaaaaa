@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>태림지반 통합관리시스템</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Noto Sans KR"', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#f0f4f8',
+                100: '#d9e2ec',
+                500: '#2b6cb0', // Strong Blue
+                700: '#1a365d', // Navy
+                900: '#102a43', // Deep Navy
+              },
+              accent: {
+                500: '#ed8936', // Safety Orange
+                600: '#dd6b20',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for chat widget */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-markdown": "https://esm.sh/react-markdown@^10.1.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-slate-100 text-slate-800 font-sans antialiased h-screen overflow-hidden">
+    <div id="root" class="h-full"></div>
+  </body>
+</html>
